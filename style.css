@@ -1,0 +1,145 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(bg-intro-desktop.png);
+    display: flex;
+    color: white;
+    background-color:hsl(0, 100%, 74%);
+    font-size: 15px;
+    font-family: poppins;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+main div{
+    padding: 2em;
+}
+
+.first-title h1{
+    font-size: 45px;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.first-title p{
+    font-weight: 400;
+    padding: 5px;
+}
+
+.short-message{
+    width: 100%;
+}
+
+.top-box{
+    background-color:hsl(248, 32%, 49%) ;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow:rgb(48, 47, 47) 
+}
+
+.top-box p span{
+    font-weight: 100;
+    font-size: 16px;
+    color: hsl(246, 25%, 77%) ;
+}
+
+.bottom-box{
+    background-color: white;
+    border-radius: 1px;
+    box-shadow: rgb(53, 53, 53);
+    margin: 15px;
+    width: 100%;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-size: 16px;
+    margin: 7px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 400;
+}
+
+input:required:invalid{
+    outline: none;
+    border:none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+
+input:invalid{
+    display: inline;
+    color: hsl(0, 100%, 74%);
+    float:right;
+    font-size: 16px;
+}
+
+input:valid{
+    outline: none;
+    border: none;
+    border: 1px solid hsl(154, 59%, 31%);
+}
+
+button{
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    margin: 7px;
+    padding: 16px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.bottom-box p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: hsl(246, 25%, 77%);;
+}
+
+.bottom-box p a{
+    color:hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+@media screen and (min-width:375px) and (max-width:1440px){
+    body{
+        background:url(bg-intro-mobile.png);
+        display: flex;
+        color: white;
+        background-color:hsl(0, 100%, 74%);
+        font-size: 15px;
+        font-family: poppins;
+    }   
+
+
+}
+
+
